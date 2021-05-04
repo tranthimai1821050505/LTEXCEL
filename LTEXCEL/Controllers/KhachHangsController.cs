@@ -138,7 +138,6 @@ namespace LTEXCEL.Controllers
                 kh.TenKhachHang = dt.Rows[i][1].ToString();
                 db.KhachHangs.Add(kh);
                 db.SaveChanges();
-
             }
    
             // CopyDataByBulk(excel.ReadDataFromExcelFile(_path));
