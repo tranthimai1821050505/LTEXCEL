@@ -139,9 +139,10 @@ namespace LTEXCEL.Controllers
                 db.KhachHangs.Add(kh);
                 db.SaveChanges();
             }
-   
+
             // CopyDataByBulk(excel.ReadDataFromExcelFile(_path));
-                return View("Index");
+            //  return View("Index");
+            return RedirectToAction("Index");
         }
         //upload file
         public DataTable ReadDataFromExcelFile(string filepath)
